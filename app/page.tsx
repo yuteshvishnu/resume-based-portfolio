@@ -66,9 +66,27 @@ export default function Portfolio() {
         "Worked with backend architects on AI-powered healthcare systems",
       ],
     },
+    {
+      company: "GE Healthcare Pvt Ltd",
+      role: "Software Development Engineer Intern",
+      period: "May 2020 – Jul 2020",
+      location: "India",
+      achievements: [
+        "Developed cloud-ready microservice for Automated Data Flow Manager project",
+        "Optimized frontend UI and backend processes, increasing code quality by 14%",
+        "Architected microservice solutions for interdepartmental information-sharing challenges",
+      ],
+    },
   ]
 
   const projects = [
+    {
+      title: "Contractguard.AI",
+      description:
+        "Award-winning AI-powered contract management system utilizing NLP, generative AI, and advanced encryption to streamline contract workflows for global enterprise clients.",
+      technologies: ["NLP", "Generative AI", "Advanced Encryption", "React", "AWS Lambda"],
+      achievements: "Won People's Choice Award at BP's Global BrightIdea AI Competition",
+    },
     {
       title: "AI Powered Gesture-to-Speech Recognition Bot",
       description:
@@ -97,7 +115,7 @@ export default function Portfolio() {
     "AWS Cloud Practitioner Certified (2024)",
     "1st place at Amazon's FuseOn AI ThinkBig Event (2023)",
     "A* Indian Institute of Technology (IIT BHU) Gold Award in Microprocessor Engineering (2021)",
-    "Spearheaded marketing initiatives as Marketing Head at IIT BHU E-Summit, orchestrating presentations from student startup teams to industry leaders and investors, driving engagement and fostering innovation (2020)",
+    "Orchestrated marketing initiatives as Marketing Head at IIT BHU E-Summit, spearheading presentations from student startup teams to industry leaders and investors, driving engagement and fostering innovation ecosystem (2020)",
     "All India Rank 946 in JEE Advanced (2017)",
     "Gold Medal in IIT BHU Powerlifting Competition (2018)",
   ]
@@ -135,7 +153,7 @@ export default function Portfolio() {
         <div className="container max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-in zoom-in-50 duration-1000 hover:animate-pulse">
-              <span className="text-4xl font-bold text-white font-serif">YA</span>
+              <span className="text-4xl font-bold text-white font-serif">YVA</span>
             </div>
 
             <div className="absolute top-20 right-10 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center animate-bounce hidden lg:flex">
@@ -161,15 +179,12 @@ export default function Portfolio() {
                 className="text-sm bg-yellow-100 text-yellow-800 border-yellow-300 font-semibold"
               >
                 <GraduationCap className="w-4 h-4 mr-1" />
-                UW Madison MS CS Student • <Star className="w-3 h-3 mx-1 inline" /> AWS Certified
+                UW Madison MS CS Student • <Star className="w-3 h-3 mx-1 inline" /> AWS Certified •{" "}
+                <Users className="w-3 h-3 mx-1 inline" /> 4.5K+ LinkedIn Connections
               </Badge>
               <Badge variant="secondary" className="text-sm">
                 <GraduationCap className="w-4 h-4 mr-1" />
                 Indian Institute of Technology (IIT BHU) Graduate
-              </Badge>
-              <Badge variant="outline" className="text-sm bg-blue-50 text-blue-800 border-blue-300">
-                <Users className="w-4 h-4 mr-1" />
-                4.5K+ LinkedIn Connections
               </Badge>
             </div>
             <div className="flex justify-center gap-4 animate-in slide-in-from-bottom-3 duration-1000 delay-700">
@@ -283,11 +298,11 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-bottom-5"
+                className="flex-shrink-0 w-80 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-bottom-5"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader>
@@ -478,7 +493,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t">
         <div className="container max-w-4xl mx-auto text-center">
-          <p className="text-muted-foreground">© 2024 Yutesh Vishnu Addanki. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-muted-foreground">© Yutesh Vishnu Addanki</p>
         </div>
       </footer>
     </div>
