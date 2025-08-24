@@ -2,9 +2,7 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  images: {
-    unoptimized: true
-  }
+  basePath: '/resume-based-portfolio',
   eslint: {
     ignoreDuringBuilds: true,
   },
