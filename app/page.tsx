@@ -131,15 +131,17 @@ export default function Portfolio() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 relative">
         <div className="container max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-in zoom-in-50 duration-1000 hover:animate-pulse">
               <span className="text-4xl font-bold text-white font-serif">YA</span>
             </div>
+
             <div className="absolute top-20 right-10 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center animate-bounce hidden lg:flex">
               <Code className="w-8 h-8 text-white" />
             </div>
+
             <h1 className="text-4xl md:text-6xl font-bold font-serif mb-4 animate-in slide-in-from-bottom-5 duration-1000">
               Software Engineer
             </h1>
