@@ -121,7 +121,7 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" style={{ color: "#0284c7" }}>
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
@@ -129,19 +129,19 @@ export default function Portfolio() {
             Yutesh Vishnu Addanki
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#about" className="text-sm font-medium hover:text-sky-600 transition-colors">
+            <a href="#about" className="text-sm font-medium text-sky-600 hover:text-sky-700 transition-colors">
               About
             </a>
-            <a href="#experience" className="text-sm font-medium hover:text-sky-600 transition-colors">
+            <a href="#experience" className="text-sm font-medium text-sky-600 hover:text-sky-700 transition-colors">
               Experience
             </a>
-            <a href="#projects" className="text-sm font-medium hover:text-sky-600 transition-colors">
+            <a href="#projects" className="text-sm font-medium text-sky-600 hover:text-sky-700 transition-colors">
               Projects
             </a>
-            <a href="#skills" className="text-sm font-medium hover:text-sky-600 transition-colors">
+            <a href="#skills" className="text-sm font-medium text-sky-600 hover:text-sky-700 transition-colors">
               Skills
             </a>
-            <a href="#contact" className="text-sm font-medium hover:text-sky-600 transition-colors">
+            <a href="#contact" className="text-sm font-medium text-sky-600 hover:text-sky-700 transition-colors">
               Contact
             </a>
           </nav>
@@ -160,10 +160,10 @@ export default function Portfolio() {
               <Code className="w-8 h-8 text-white" />
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold font-serif mb-4 animate-in slide-in-from-bottom-5 duration-1000">
+            <h1 className="text-4xl md:text-6xl font-bold font-serif mb-4 animate-in slide-in-from-bottom-5 duration-1000 text-sky-600">
               Software Engineer
             </h1>
-            <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto text-justify leading-relaxed animate-in fade-in duration-1200 delay-300">
+            <p className="text-xl text-sky-600 mb-6 max-w-2xl mx-auto text-justify leading-relaxed animate-in fade-in duration-1200 delay-300">
               Accomplished software engineer with 4+ years of experience architecting, developing, and optimizing
               scalable systems at Amazon, BP, Siemens, and GE Healthcare. Demonstrates exceptional team collaboration,
               leadership excellence, strategic problem-solving, and innovative solution design that consistently drives
@@ -208,18 +208,18 @@ export default function Portfolio() {
       {/* About Section */}
       <section id="about" className="py-20 px-4 bg-muted/50">
         <div className="container max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700">
+          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700 text-sky-600">
             About Me
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="animate-in slide-in-from-left-5 duration-1000">
-              <p className="text-lg mb-4 text-justify leading-relaxed">
+              <p className="text-lg mb-4 text-justify leading-relaxed text-sky-600">
                 I'm a dynamic software engineer who excels in team collaboration, strategic problem-solving, and
                 innovative system design. With 4+ years of experience spearheading scalable solutions and mentoring
                 cross-functional teams, I consistently deliver high-impact results that drive business growth and
                 technical excellence across diverse technological landscapes.
               </p>
-              <p className="text-lg mb-6 text-justify leading-relaxed">
+              <p className="text-lg mb-6 text-justify leading-relaxed text-sky-600">
                 My journey began at the prestigious Indian Institute of Technology (IIT BHU) where I graduated with a
                 8.5+ CGPA in Electronics Engineering. Since then, I've had the privilege of architecting solutions at
                 industry leaders like Amazon, BP, Siemens, and GE Healthcare while currently pursuing my MS in Computer
@@ -228,21 +228,21 @@ export default function Portfolio() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-card rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
                   <div className="text-2xl font-bold text-sky-600">4+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-sm text-sky-600">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
                   <div className="text-2xl font-bold text-sky-600">10K+</div>
-                  <div className="text-sm text-muted-foreground">Users Impacted</div>
+                  <div className="text-sm text-sky-600">Users Impacted</div>
                 </div>
               </div>
             </div>
             <div className="animate-in slide-in-from-right-5 duration-1000">
-              <h3 className="text-xl font-semibold mb-4">Key Achievements</h3>
+              <h3 className="text-xl font-semibold mb-4 text-sky-600">Key Achievements</h3>
               <ul className="space-y-2">
                 {achievements.slice(0, 5).map((achievement, index) => (
                   <li key={index} className="flex items-start gap-2 hover:bg-muted/30 p-2 rounded transition-colors">
                     <Trophy className="w-4 h-4 text-sky-600 mt-1 flex-shrink-0" />
-                    <span className="text-sm text-justify">{achievement}</span>
+                    <span className="text-sm text-justify text-sky-600">{achievement}</span>
                   </li>
                 ))}
               </ul>
@@ -254,7 +254,7 @@ export default function Portfolio() {
       {/* Experience Section */}
       <section id="experience" className="py-20 px-4">
         <div className="container max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700">
+          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700 text-sky-600">
             Work Experience
           </h2>
           <div className="space-y-6">
@@ -267,10 +267,10 @@ export default function Portfolio() {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-xl">{exp.role}</CardTitle>
+                      <CardTitle className="text-xl text-sky-600">{exp.role}</CardTitle>
                       <CardDescription className="text-lg font-medium text-sky-600">{exp.company}</CardDescription>
                     </div>
-                    <div className="text-right text-sm text-muted-foreground">
+                    <div className="text-right text-sm text-sky-600">
                       <div>{exp.period}</div>
                       <div>{exp.location}</div>
                     </div>
@@ -281,7 +281,7 @@ export default function Portfolio() {
                     {exp.achievements.map((achievement, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-justify">{achievement}</span>
+                        <span className="text-justify text-sky-600">{achievement}</span>
                       </li>
                     ))}
                   </ul>
@@ -295,7 +295,7 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 bg-muted/50">
         <div className="container max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700">
+          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700 text-sky-600">
             Featured Projects
           </h2>
           <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
@@ -306,8 +306,8 @@ export default function Portfolio() {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader>
-                  <CardTitle className="text-lg">{project.title}</CardTitle>
-                  <CardDescription className="text-justify">{project.description}</CardDescription>
+                  <CardTitle className="text-lg text-sky-600">{project.title}</CardTitle>
+                  <CardDescription className="text-justify text-sky-600">{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-4">
@@ -316,13 +316,13 @@ export default function Portfolio() {
                         <Badge
                           key={i}
                           variant="outline"
-                          className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors"
+                          className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors text-sky-600"
                         >
                           {tech}
                         </Badge>
                       ))}
                     </div>
-                    <p className="text-sm text-accent font-medium text-justify">{project.achievements}</p>
+                    <p className="text-sm text-sky-600 font-medium text-justify">{project.achievements}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -334,15 +334,15 @@ export default function Portfolio() {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4">
         <div className="container max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700">
+          <h2 className="text-3xl font-bold font-serif mb-8 text-center animate-in slide-in-from-top-3 duration-700 text-sky-600">
             Technical Skills
           </h2>
           <div className="grid md:grid-cols-2 gap-6 animate-in slide-in-from-bottom-5 duration-1000">
             {skills.map((skill, index) => (
               <div key={index} className="space-y-2 hover:bg-muted/30 p-3 rounded transition-colors">
                 <div className="flex justify-between">
-                  <span className="font-medium">{skill.name}</span>
-                  <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                  <span className="font-medium text-sky-600">{skill.name}</span>
+                  <span className="text-sm text-sky-600">{skill.level}%</span>
                 </div>
                 <Progress value={skill.level} className="h-2 transition-all duration-500 hover:h-3" />
               </div>
@@ -352,7 +352,7 @@ export default function Portfolio() {
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-left-5 duration-1000">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-sky-600">
                   <Code className="w-5 h-5 text-sky-600" />
                   Languages
                 </CardTitle>
@@ -363,7 +363,7 @@ export default function Portfolio() {
                     <Badge
                       key={lang}
                       variant="secondary"
-                      className="hover:bg-sky-600 hover:text-white transition-colors"
+                      className="hover:bg-sky-600 hover:text-white transition-colors text-sky-600"
                     >
                       {lang}
                     </Badge>
@@ -374,7 +374,7 @@ export default function Portfolio() {
 
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-bottom-5 duration-1000 delay-200">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-sky-600">
                   <Briefcase className="w-5 h-5 text-sky-600" />
                   Frameworks
                 </CardTitle>
@@ -385,7 +385,7 @@ export default function Portfolio() {
                     <Badge
                       key={framework}
                       variant="secondary"
-                      className="hover:bg-sky-600 hover:text-white transition-colors"
+                      className="hover:bg-sky-600 hover:text-white transition-colors text-sky-600"
                     >
                       {framework}
                     </Badge>
@@ -396,7 +396,7 @@ export default function Portfolio() {
 
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-right-5 duration-1000 delay-400">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-sky-600">
                   <Award className="w-5 h-5 text-sky-600" />
                   Cloud & Tools
                 </CardTitle>
@@ -407,7 +407,7 @@ export default function Portfolio() {
                     <Badge
                       key={tool}
                       variant="secondary"
-                      className="hover:bg-sky-600 hover:text-white transition-colors"
+                      className="hover:bg-sky-600 hover:text-white transition-colors text-sky-600"
                     >
                       {tool}
                     </Badge>
@@ -422,10 +422,10 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-muted/50">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold font-serif mb-8 animate-in slide-in-from-top-3 duration-700">
+          <h2 className="text-3xl font-bold font-serif mb-8 animate-in slide-in-from-top-3 duration-700 text-sky-600">
             Let's Connect
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-justify animate-in fade-in duration-1000 delay-300">
+          <p className="text-lg text-sky-600 mb-8 max-w-2xl mx-auto text-justify animate-in fade-in duration-1000 delay-300">
             I'm always interested in discussing new opportunities, innovative projects, or potential collaborations.
             Feel free to reach out and let's explore how we can work together to create impactful solutions!
           </p>
@@ -434,7 +434,7 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-left-5 duration-1000">
               <CardContent className="pt-6 text-center">
                 <Mail className="w-8 h-8 text-sky-600 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Email</h3>
+                <h3 className="font-semibold mb-2 text-sky-600">Email</h3>
                 <a href="mailto:yuteshvishnu@gmail.com" className="text-sky-600 hover:underline">
                   yuteshvishnu@gmail.com
                 </a>
@@ -444,7 +444,7 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-bottom-5 duration-1000 delay-200">
               <CardContent className="pt-6 text-center">
                 <Phone className="w-8 h-8 text-sky-600 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Phone</h3>
+                <h3 className="font-semibold mb-2 text-sky-600">Phone</h3>
                 <a href="tel:+16084213499" className="text-sky-600 hover:underline">
                   +1-608-421-3499
                 </a>
@@ -454,9 +454,9 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-right-5 duration-1000 delay-400">
               <CardContent className="pt-6 text-center">
                 <Linkedin className="w-8 h-8 text-sky-600 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">LinkedIn</h3>
-                <div className="text-sm text-muted-foreground mb-1">4.5K+ connections</div>
-                <div className="text-xs text-muted-foreground mb-2">Contributing author to LinkedIn articles</div>
+                <h3 className="font-semibold mb-2 text-sky-600">LinkedIn</h3>
+                <div className="text-sm text-sky-600 mb-1">4.5K+ connections</div>
+                <div className="text-xs text-sky-600 mb-2">Contributing author to LinkedIn articles</div>
                 <a
                   href="https://www.linkedin.com/in/yutesh-vishnu-addanki-3b51a1217/"
                   target="_blank"
@@ -493,7 +493,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t">
         <div className="container max-w-4xl mx-auto text-center">
-          <p className="text-muted-foreground">© Yutesh Vishnu Addanki</p>
+          <p className="text-sky-600">© Yutesh Vishnu Addanki</p>
         </div>
       </footer>
     </div>
