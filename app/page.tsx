@@ -125,23 +125,23 @@ export default function Portfolio() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="font-serif text-xl font-bold text-primary ml-8 animate-in slide-in-from-left-5 duration-700">
+          <div className="font-serif text-xl font-bold text-sky-600 ml-8 animate-in slide-in-from-left-5 duration-700">
             Yutesh Vishnu Addanki
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#about" className="text-sm font-medium hover:text-sky-600 transition-colors">
               About
             </a>
-            <a href="#experience" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#experience" className="text-sm font-medium hover:text-sky-600 transition-colors">
               Experience
             </a>
-            <a href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#projects" className="text-sm font-medium hover:text-sky-600 transition-colors">
               Projects
             </a>
-            <a href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#skills" className="text-sm font-medium hover:text-sky-600 transition-colors">
               Skills
             </a>
-            <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#contact" className="text-sm font-medium hover:text-sky-600 transition-colors">
               Contact
             </a>
           </nav>
@@ -152,7 +152,7 @@ export default function Portfolio() {
       <section className="py-20 px-4 relative">
         <div className="container max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-in zoom-in-50 duration-1000 hover:animate-pulse">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-sky-500 to-sky-700 flex items-center justify-center animate-in zoom-in-50 duration-1000 hover:animate-pulse">
               <span className="text-4xl font-bold text-white font-serif">YVA</span>
             </div>
 
@@ -188,7 +188,7 @@ export default function Portfolio() {
               </Badge>
             </div>
             <div className="flex justify-center gap-4 animate-in slide-in-from-bottom-3 duration-1000 delay-700">
-              <Button asChild className="hover:scale-105 transition-transform">
+              <Button asChild className="hover:scale-105 transition-transform bg-sky-600 hover:bg-sky-700">
                 <a href="#contact">
                   <Mail className="w-4 h-4 mr-2" />
                   Get In Touch
@@ -227,11 +227,11 @@ export default function Portfolio() {
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-card rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="text-2xl font-bold text-primary">4+</div>
+                  <div className="text-2xl font-bold text-sky-600">4+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="text-2xl font-bold text-primary">10K+</div>
+                  <div className="text-2xl font-bold text-sky-600">10K+</div>
                   <div className="text-sm text-muted-foreground">Users Impacted</div>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function Portfolio() {
               <ul className="space-y-2">
                 {achievements.slice(0, 5).map((achievement, index) => (
                   <li key={index} className="flex items-start gap-2 hover:bg-muted/30 p-2 rounded transition-colors">
-                    <Trophy className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
+                    <Trophy className="w-4 h-4 text-sky-600 mt-1 flex-shrink-0" />
                     <span className="text-sm text-justify">{achievement}</span>
                   </li>
                 ))}
@@ -268,7 +268,7 @@ export default function Portfolio() {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-xl">{exp.role}</CardTitle>
-                      <CardDescription className="text-lg font-medium text-primary">{exp.company}</CardDescription>
+                      <CardDescription className="text-lg font-medium text-sky-600">{exp.company}</CardDescription>
                     </div>
                     <div className="text-right text-sm text-muted-foreground">
                       <div>{exp.period}</div>
@@ -280,7 +280,7 @@ export default function Portfolio() {
                   <ul className="space-y-2">
                     {exp.achievements.map((achievement, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-justify">{achievement}</span>
                       </li>
                     ))}
@@ -353,7 +353,7 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-left-5 duration-1000">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Code className="w-5 h-5 text-primary" />
+                  <Code className="w-5 h-5 text-sky-600" />
                   Languages
                 </CardTitle>
               </CardHeader>
@@ -363,7 +363,7 @@ export default function Portfolio() {
                     <Badge
                       key={lang}
                       variant="secondary"
-                      className="hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="hover:bg-sky-600 hover:text-white transition-colors"
                     >
                       {lang}
                     </Badge>
@@ -375,7 +375,7 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-bottom-5 duration-1000 delay-200">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Briefcase className="w-5 h-5 text-primary" />
+                  <Briefcase className="w-5 h-5 text-sky-600" />
                   Frameworks
                 </CardTitle>
               </CardHeader>
@@ -385,7 +385,7 @@ export default function Portfolio() {
                     <Badge
                       key={framework}
                       variant="secondary"
-                      className="hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="hover:bg-sky-600 hover:text-white transition-colors"
                     >
                       {framework}
                     </Badge>
@@ -397,7 +397,7 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-right-5 duration-1000 delay-400">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Award className="w-5 h-5 text-primary" />
+                  <Award className="w-5 h-5 text-sky-600" />
                   Cloud & Tools
                 </CardTitle>
               </CardHeader>
@@ -407,7 +407,7 @@ export default function Portfolio() {
                     <Badge
                       key={tool}
                       variant="secondary"
-                      className="hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="hover:bg-sky-600 hover:text-white transition-colors"
                     >
                       {tool}
                     </Badge>
@@ -433,9 +433,9 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-left-5 duration-1000">
               <CardContent className="pt-6 text-center">
-                <Mail className="w-8 h-8 text-primary mx-auto mb-4" />
+                <Mail className="w-8 h-8 text-sky-600 mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:yuteshvishnu@gmail.com" className="text-primary hover:underline">
+                <a href="mailto:yuteshvishnu@gmail.com" className="text-sky-600 hover:underline">
                   yuteshvishnu@gmail.com
                 </a>
               </CardContent>
@@ -443,9 +443,9 @@ export default function Portfolio() {
 
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-bottom-5 duration-1000 delay-200">
               <CardContent className="pt-6 text-center">
-                <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
+                <Phone className="w-8 h-8 text-sky-600 mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Phone</h3>
-                <a href="tel:+16084213499" className="text-primary hover:underline">
+                <a href="tel:+16084213499" className="text-sky-600 hover:underline">
                   +1-608-421-3499
                 </a>
               </CardContent>
@@ -453,7 +453,7 @@ export default function Portfolio() {
 
             <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 animate-in slide-in-from-right-5 duration-1000 delay-400">
               <CardContent className="pt-6 text-center">
-                <Linkedin className="w-8 h-8 text-primary mx-auto mb-4" />
+                <Linkedin className="w-8 h-8 text-sky-600 mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">LinkedIn</h3>
                 <div className="text-sm text-muted-foreground mb-1">4.5K+ connections</div>
                 <div className="text-xs text-muted-foreground mb-2">Contributing author to LinkedIn articles</div>
@@ -461,7 +461,7 @@ export default function Portfolio() {
                   href="https://www.linkedin.com/in/yutesh-vishnu-addanki-3b51a1217/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:underline"
+                  className="text-sky-600 hover:underline"
                 >
                   Connect with me
                 </a>
@@ -470,7 +470,7 @@ export default function Portfolio() {
           </div>
 
           <div className="flex justify-center gap-4 animate-in slide-in-from-bottom-3 duration-1000 delay-600">
-            <Button asChild size="lg" className="hover:scale-105 transition-transform">
+            <Button asChild size="lg" className="hover:scale-105 transition-transform bg-sky-600 hover:bg-sky-700">
               <a href="mailto:yuteshvishnu@gmail.com">
                 <Mail className="w-4 h-4 mr-2" />
                 Send Email
